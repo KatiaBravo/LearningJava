@@ -2,12 +2,9 @@ package com.example.android.learningjava;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
-/**
- * Created by wendy on 11/1/2015.
- */
+
 public class CupSizeTest {
     private CupSize mCupSize;
     @Before
