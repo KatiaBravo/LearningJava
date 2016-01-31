@@ -33,4 +33,19 @@ public class FibonacciTest {
     public void testFibonacci6() throws Exception {
         assertEquals(8, mFibonacci.fibonacciFinding(6));
     }
+
+    @Test
+    public void testFibonacci30() throws Exception {
+        assertEquals(832040, mFibonacci.fibonacciFinding(30));
+    }
+
+    @Test
+    public void testFibonacci50() throws Exception {
+        assertEquals(12586269025L, mFibonacci.fibonacciFinding(50)); // 12B
+    }
+
+    @Test
+    public void testFibonacci100() throws Exception {
+        assertEquals(3736710778780434371L, mFibonacci.fibonacciFinding(100)); // 3GAZILLION
+    }
 }

@@ -2,14 +2,16 @@ package com.example.android.learningjava;
 
 /** Created by Kids on 1/31/2016. */
 public class Fibonacci {
-    public int fibonacciFinding(int n){
-        if (n == 1){
-             return 1;
-        }else if (n == 2){
-            return 1;
-        }else if (n == 3){
-            return 2;
+    public long fibonacciFinding(long n){
+        long one = 0;
+        long two = 1;
+
+        long a = two + one;
+        for(long i = 0; i < n; i++){
+            one = two;
+            two = a;
+            a = two + one;
         }
-        return 3;
+        return one;
     }
 }
